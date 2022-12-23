@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uas_pbo_2.HelloController">
+    <left>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: F578B4;" BorderPane.alignment="CENTER" />
+    </left>
+    <center>
+        <AnchorPane fx:id="btn" prefHeight="400.0" prefWidth="406.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="loginbutton" layoutX="179.0" layoutY="239.0" mnemonicParsing="false" onAction="#loginbuttononaction" prefHeight="30.0" prefWidth="71.0" style="-fx-background-color: F578B4;" text="Login" textFill="WHITE" />
+                <Hyperlink layoutX="159.0" layoutY="334.0" text="forgot password?" />
+            <TextField fx:id="username_TextField" layoutX="140.0" layoutY="140.0" promptText="Username" />
+            <Text fx:id="loginMessage" layoutX="122.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="184.5367431640625" />
+            <Text layoutX="112.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CITRA JAYA MALL">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="password_PasswordField" layoutX="139.0" layoutY="187.0" promptText="Password" />
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

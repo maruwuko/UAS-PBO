@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uas_pbo_2.CheckoutController">
+    <children>
+        <Button fx:id="backButton" layoutX="24.0" layoutY="59.0" mnemonicParsing="false" onAction="#backButtononaction" prefHeight="27.0" prefWidth="59.0" style="-fx-background-color: F578B4;" text="Back" textFill="WHITE" />
+        <AnchorPane layoutY="14.0" prefHeight="26.0" prefWidth="600.0" style="-fx-background-color: F578B4;">
+            <children>
+                <Text fill="WHITE" layoutX="22.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CITRA JAYA MALL">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="448.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="secure parking">
+                    <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <Text layoutX="462.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="08/DESEMBER/2022">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <AnchorPane layoutX="450.0" layoutY="73.0" opacity="0.5" prefHeight="27.0" prefWidth="137.0" style="-fx-background-color: F578B4;">
+            <children>
+                <Text layoutX="28.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11 : 25 : 30">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <Text layoutX="203.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PARKIR KELUAR" wrappingWidth="194.513671875">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Text>
+        <Text layoutX="105.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No. Kartu Parkir   :" wrappingWidth="125.0">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <Text layoutX="105.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No. Plat Polisi       :" wrappingWidth="113.80078125">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+      <Text layoutX="105.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jenis Kendaraan   :" wrappingWidth="125.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="105.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Waktu Masuk       :" wrappingWidth="113.80078125">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="105.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Waktu Keluar       :" wrappingWidth="125.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="105.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biaya Parkir          :" wrappingWidth="113.80078125">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Button fx:id="hitungBiayaParkirButton" layoutX="412.0" layoutY="250.0" mnemonicParsing="false" onAction="#hitungBiaya" prefHeight="21.0" prefWidth="75.0" style="-fx-background-color: F578B4;" text="Hitung" textFill="WHITE" />
+      <Text fx:id="nomorKartuParkir" layoutX="230.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="98.93670654296875" />
+      <Text fx:id="nomorPolisi" layoutX="230.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="98.93670654296875" />
+      <RadioButton fx:id="rbmobil" layoutX="230.0" layoutY="208.0" mnemonicParsing="false" text="Mobil" />
+      <RadioButton fx:id="rbmotor" layoutX="314.0" layoutY="208.0" mnemonicParsing="false" text="Motor" />
+      <TextField fx:id="wktMasuk" layoutX="230.0" layoutY="237.0" />
+      <TextField fx:id="wktKeluar" layoutX="230.0" layoutY="265.0" />
+      <Text fx:id="pesanError" layoutX="236.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="185.33673095703125" />
+      <Text fx:id="biayaParkir" layoutX="230.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="149.5999999999999" />
+    </children>
+</AnchorPane>
